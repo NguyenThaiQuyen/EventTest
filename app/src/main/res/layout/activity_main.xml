@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txt_Topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Các kiểu lập trình sự kiện"
+        android:background="@color/color_background_topic"
+        android:textColor="@color/color_text_topic"
+        android:textSize="24sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/txt_so_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số a:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_so_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/txt_so_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số b:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_so_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:inputType="number" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:background="@color/color_background_topic"
+        android:gravity="center"
+        android:textColor="@color/color_text_topic"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_tong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng 2 số"
+        android:textSize="24sp" />
+        <!-- android:onClick="btn_Sum" -->
+
+
+</LinearLayout>
